@@ -5,31 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
      
-<fieldset>
+    <div class="form-1-container section-container">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-10 offset-md-1 form-1-box wow fadeInUp">
+    
+                    <form action="" method="post">
 
-<legend style="text-align: center;">Admin <span style="color:red;"> App</span></legend>
-<input type="text" placeholder="name">
-<input type="text" placeholder="surname">
-<input type="text" placeholder="contact">
-<input type="text" placeholder="position">
-<input type="text" placeholder="salary">
+                        <h2>Admin <span style="color:red;">App</span></h2>
+                        <!-- User's Credentials  -->
+                        <fieldset class="form-group border p-3">
+                            <legend class="w-auto px-2">User's <span style="color:red;">Credentials</span></legend>
+                            <div class="form-group">
+                               <input type="text" class="form-control username" id="username" placeholder="Username..." name="username">
+                            </div>
 
-</fieldset>
+                            <div class="form-group">
+                                <input type="text" class="form-control username" id="username" placeholder="Username..." name="username">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control email" id="email" placeholder="Email..." name="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control password" id="password" placeholder="Password..." name="password">
+                            </div>
+                        </fieldset>
+                        <!-- User's Preferences  -->
+                        <fieldset class="form-group border p-3">
+                            <legend class="w-auto px-2">Select <span style="color:red;">
+                                Role</span></legend>
+                         
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="employee" value="Employee">
+                                <label class="form-check-label" for="Employee"><strong>Employee</strong> </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio"  id="Constractor" value="Constructor">
+                                <label class="form-check-label" for="Constructor"><strong>Constructor</strong></label>
+                            </div>
+                        </fieldset>
+                        <div class="form-group row text-right">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">Add Member</button>
+                            </div>
+                        </div>
+                    </form>
+    
 
-<fieldset>
 
-    <legend>Results</legend>
-</fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <fieldset id=""fieldsetTable" class="form-group border p-3">
+        <legend class="w-auto px-2">Staff <span style="color:red;">
+            List</span></legend>
+     
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+                  
+                </tbody>
+              </table>
+       
+    </fieldset>
+    
 
     <!-- <p >Firstname:<input id="fname" type="text"> <button id="subBtn" type="button" class="btn btn-info">Update</button></p> -->
 
 
 <script src="/main.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

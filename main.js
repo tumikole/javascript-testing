@@ -1,4 +1,14 @@
-// const submit = document.querySelector('#subBtn')
+
+$(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+
+  // const submit = document.querySelector('#subBtn')
 // const form = document.querySelector('#myForm')
 // lastname.addEventListener('click', updateSurname);
 
@@ -19,14 +29,5 @@
 // }
 
 //   }
-
-// const firstname = document.querySelector('#fname')
-// const lastname = document.querySelector('#lname')
-// const email = document.querySelector('#email')
-// const contact = document.querySelector('#contact')
-// const salary = document.querySelector('#salary')
-// const position = document.querySelector('#position')
-
-
 
 
